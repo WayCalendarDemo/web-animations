@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="/shared/css/web.animations.min.css" media="all">
+        <link rel="stylesheet" type="text/css" href="/shared/css/dependency/slick.min.css" media="all">
+    </head>
+    <body class="kateinoigaku expanding-circle__ctn" id="js-kateinoigaku">
+        <nav id="js-nav" class="kateinoigaku__nav">
+            <a href="#js-kateinoigaku" class="kateinoigaku__top-logo js-logo">
+                <img class="kateinoigaku__top-logo--image" src="/shared/img/kateinoigaku/icon_logo.svg" alt="" width="100%">
+            </a>
+            <ul class="lst kateinoigaku__nav--lst">
+                <li class="kateinoigaku__nav--itm"><a class="kateinoigaku__nav--lnk js-nav-link" href="#introAnchor"><span class="lnk-line-slide">Lexiについて</span></a></li>
+                <li class="kateinoigaku__nav--itm"><a class="kateinoigaku__nav--lnk js-nav-link" href="#downloadAnchor"><span class="lnk-line-slide">ダウンロード</span></a></li>
+                <li class="kateinoigaku__nav--itm"><a class="kateinoigaku__nav--lnk js-nav-link" href="#meritAnchor"><span class="lnk-line-slide">メリットについて</span></a></li>
+                <!-- <li class="kateinoigaku__nav--itm"><a class="kateinoigaku__nav--lnk js-nav-link" href="#functionAnchor"><span class="lnk-line-slide">機能について</span></a></li> -->
+                <li class="kateinoigaku__nav--itm"><a class="kateinoigaku__nav--lnk js-nav-link" href="#faqAnchor"><span class="lnk-line-slide">よくある質問</span></a></li>
+                <li class="kateinoigaku__nav--itm"><a class="kateinoigaku__nav--lnk" href="#" target="_blank"><img width="117" height="auto" src="/shared/img/kateinoigaku/app_store_btn.png" alt=""></a></li>
+            </ul>
+        </nav>
+        <!-- メインビジュアル -->
+        <section id="js-main" class="sect sect-fh p-0 cntnr cntnr-nm kateinoigaku__mv js-intersect">
+            <div class="bx cntnr-v-centr-self">
+                <div class="cntnr cntnr-v-centr kateinoigaku__mv--ctn">
+                    <div class="cntnr__itm cntnr__6md">
+                        <div class="kateinoigaku__mv--ttl-ctn">
+                            <!-- 見出し -->
+                            <p class="text-popup__cover str">
+                                <span class="text-popup__txt js-show-txt">
+                                    <span class="txt-brand-drk">アプリ1つで英語単語の勉強</span>
+                                </span>
+                            </p>
+                            <h1 class="ttl-lg text-popup str">
+                                <span class="text-popup__cover">
+                                    <span class="text-popup__txt js-show-txt">
+                                        <span class="txt-brand-drk">気軽に</span>覚える
+                                    </span>
+                                </span>
+                                <span class="text-popup__cover">
+                                    <span class="text-popup__txt js-show-txt">
+                                        英単語<span class="txt-brand-drk">アプリ</span>
+                                    </span>
+                                </span>
+                            </h1>
+                            <!-- コピー -->                                                                    
+                            <p class="txt-st text-fadein js-show-txt">英単語を効率的に学び、<br>記憶力と理解力を高める、革新的なフラッシュカード<br>アプリ英単語を楽にマスターし、英語力を向上</p>
+                        </div>
+                    </div>
+                    <!--画像がフェイドアウトスライダー -->
+                    <div class="cntnr__itm cntnr__6md">
+                        <div class="ml-auto" style="max-width: 264px;">
+                            <div class="slider-fade js-slider-fade">
+                                <div><img class="img-fluid" src="/shared/img/kateinoigaku/slide-fade-1.png" alt=""></div>
+                                <div><img class="img-fluid" src="/shared/img/kateinoigaku/slide-fade-2.png" alt=""></div>
+                                <div><img class="img-fluid" src="/shared/img/kateinoigaku/slide-fade-3.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 背景の横にスライドするスライダー -->
+            <div class="loop_slider__ctn">
+                <div class="loop_slider">
+                    <ul class="cntnr cntnr-nm cntnr-no-wrap">
+                        <li class="cntnr__itm cntnr-nm__itm"><img class="img-fluid" src="/shared/img/kateinoigaku/loop-slider.png" alt=""></li>
+                        <li class="cntnr__itm cntnr-nm__itm"><img class="img-fluid" src="/shared/img/kateinoigaku/loop-slider.png" alt=""></li>
+                        <li class="cntnr__itm cntnr-nm__itm"><img class="img-fluid" src="/shared/img/kateinoigaku/loop-slider.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-slider">
+                <div class="mobile-slider__bg-ctn"></div>
+                <div class="mobile-slider__ctn">
+                    <!-- スライダーコンテンツ -->
+                    <div class="mobile-slider__contents">
+                        <div class="js-slider">
+                            <div><img class="img-fluid" src="/shared/img/kateinoigaku/slide-1.png" alt=""></div>
+                            <div><img class="img-fluid" src="/shared/img/kateinoigaku/slide-2.png" alt=""></div>
+                            <div><img class="img-fluid" src="/shared/img/kateinoigaku/slide-3.png" alt=""></div>
+                            <div><img class="img-fluid" src="/shared/img/kateinoigaku/slide-4.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 拡大される丸 -->
+            <div class="expanding-circle js-intersect" id="js-expandingCircle"></div>
+        </section>
+
+        <!-- アプリダウンロードリンク -->
+        <section id="introAnchor" class="sect sect-reset kateinoigaku__download pb-0 loop_slider__wrap js-intersect">
+            <div class="bx bx-9">
+                <p class="txt-lg text-center">
+                    フラッシュカード方式はもちろん、いろんなおもしろい方法で<br>
+                    一日たったの数回で5分もなく効率的に英単語を覚える<br>
+                    ことができる便利な<span class="str">「Lexi」</span>の公式アプリ。<br>
+                    電車を待っている間、バスを乗っている所、休憩中など、<br>
+                    簡単にさまざまな方法で英単語を復習出来るアプリです。<br>
+                    しかも、<span class="str">1つのアカウントで4人まで登録が出来て、</span>家族<br>
+                    みんなで勉強の出来るアプリです。
+                </p>
+            </div>
+        </section>
+        <section id="downloadAnchor" class="sect sect-fh sect-reset kateinoigaku__download pt-0 pb-0 loop_slider__wrap js-intersect">
+            <div class="kateinoigaku__download--bg">
+                <div class="bx bx-9">
+                    <div class="kateinoigaku__download--ctn-wrap">
+                        <div class="kateinoigaku__download--ctn text-center">
+                            <div class="kateinoigaku__download--brdr-ctn mb-5 pb-5">
+                                <a class="kateinoigaku__download--logo-lnk" href="">
+                                    <img class="kateinoigaku__download--logo" width="110" height="auto" src="/shared/img/kateinoigaku/icon_app_logo.svg" alt="" width="100%">
+                                </a>
+                                <p class="txt-st">
+                                    iOSアプリ「Lexi」は<br>
+                                    App Storeから無料でダウンロードできます。
+                                </p>
+                            </div>
+                            <div class="mb-4 pb-2">
+                                <a href="#" target="_blank">
+                                    <img width="181" height="auto" src="/shared/img/kateinoigaku/app_store_btn.png" alt="">
+                                </a>
+                            </div>
+                            <div class="mb">
+                                <a href="#" target="_blank">
+                                    <img width="78" height="auto" src="/shared/img/kateinoigaku/app_store_QR.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- <div style="height:495px;"></div> -->
+                    </div>
+                </div>
+                <!-- 背景の横にスライドするスライダー -->
+                <div class="loop_slider__ctn">
+                    <div class="loop_slider">
+                        <ul class="cntnr cntnr-nm cntnr-no-wrap">
+                            <li class="cntnr__itm cntnr-nm__itm"><img class="img-fluid" src="/shared/img/kateinoigaku/loop-slider-2.png" alt=""></li>
+                            <li class="cntnr__itm cntnr-nm__itm"><img class="img-fluid" src="/shared/img/kateinoigaku/loop-slider-2.png" alt=""></li>
+                            <li class="cntnr__itm cntnr-nm__itm"><img class="img-fluid" src="/shared/img/kateinoigaku/loop-slider-2.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="loop_slider loop-reverse">
+                        <ul class="cntnr cntnr-nm cntnr-no-wrap">
+                            <li class="cntnr__itm cntnr-nm__itm"><img class="img-fluid" src="/shared/img/kateinoigaku/loop-slider-4.png" alt=""></li>
+                            <li class="cntnr__itm cntnr-nm__itm"><img class="img-fluid" src="/shared/img/kateinoigaku/loop-slider-4.png" alt=""></li>
+                            <li class="cntnr__itm cntnr-nm__itm"><img class="img-fluid" src="/shared/img/kateinoigaku/loop-slider-4.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="loop_slider">
+                        <ul class="cntnr cntnr-nm cntnr-no-wrap">
+                            <li class="cntnr__itm cntnr-nm__itm"><img class="img-fluid" src="/shared/img/kateinoigaku/loop-slider-3.png" alt=""></li>
+                            <li class="cntnr__itm cntnr-nm__itm"><img class="img-fluid" src="/shared/img/kateinoigaku/loop-slider-3.png" alt=""></li>
+                            <li class="cntnr__itm cntnr-nm__itm"><img class="img-fluid" src="/shared/img/kateinoigaku/loop-slider-3.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="loop_slider loop-reverse">
+                        <ul class="cntnr cntnr-nm cntnr-no-wrap">
+                            <li class="cntnr__itm cntnr-nm__itm"><img class="img-fluid" src="/shared/img/kateinoigaku/loop-slider-5.png" alt=""></li>
+                            <li class="cntnr__itm cntnr-nm__itm"><img class="img-fluid" src="/shared/img/kateinoigaku/loop-slider-5.png" alt=""></li>
+                            <li class="cntnr__itm cntnr-nm__itm"><img class="img-fluid" src="/shared/img/kateinoigaku/loop-slider-5.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="loop_slider">
+                        <ul class="cntnr cntnr-nm cntnr-no-wrap">
+                            <li class="cntnr__itm cntnr-nm__itm"><img class="img-fluid" src="/shared/img/kateinoigaku/loop-slider-6.png" alt=""></li>
+                            <li class="cntnr__itm cntnr-nm__itm"><img class="img-fluid" src="/shared/img/kateinoigaku/loop-slider-6.png" alt=""></li>
+                            <li class="cntnr__itm cntnr-nm__itm"><img class="img-fluid" src="/shared/img/kateinoigaku/loop-slider-6.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- アプリのメリット -->
+        <section id="meritAnchor" class="sect kateinoigaku__feature expanding-circle__next-ctn js-intersect">
+            <div class="bx">
+                <div class="cntnr">
+                    <div class="cntnr__9md">
+                        <div class="kateinoigaku__feature--feat-item mb-5">
+                            <div class="cntnr cntnr-v-centr">
+                                <div class="cntnr__itm cntnr__6md text-center">
+                                    <img class="img-fluid" src="/shared/img/kateinoigaku/feature-1.png" alt="" width="300">
+                                </div>
+                                <div class="cntnr__itm cntnr__6md">
+                                    <h3 class="ttl-sm str mb-4">フラッシュカードで<br><span class="txt-brand-drk">効率的な学習</span>ができる</h3>
+                                    <p class="txt-st">Lexiアプリでフラッシュカードを利用して英単語を簡単に短期記憶から長期記憶に移すのにとても役立ちます。用意されたフラッシュカードを通して、準備なしで、繰り返し学習することで既知の情報を定着させることができます。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kateinoigaku__feature--feat-item mb-5">
+                            <div class="cntnr cntnr-v-centr">
+                                <div class="cntnr__itm cntnr__6md text-center">
+                                    <img class="img-fluid" src="/shared/img/kateinoigaku/feature-2.png" alt="" width="266">
+                                </div>
+                                <div class="cntnr__itm cntnr__6md">
+                                    <h3 class="ttl-sm str mb-4">どこに居てもフラッシュカードが<br><span class="txt-brand-drk">大量にポケットにある</span></h3>
+                                    <p class="txt-st">モバイルデバイスさえあれば、電車の中、休憩中、学校帰り、家庭内、外出中、いつでも大量なフラッシュカードセットから勉強したい英単語を学んだり、復習したりできます。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kateinoigaku__feature--feat-item">
+                            <div class="cntnr cntnr-v-centr">
+                                <div class="cntnr__itm cntnr__6md text-center">
+                                    <img class="img-fluid" src="/shared/img/kateinoigaku/feature-3.png" alt="" width="248">
+                                </div>
+                                <div class="cntnr__itm cntnr__6md">
+                                    <h3 class="ttl-sm str mb-4">英単語を勉強する<br><span class="txt-brand-drk">習慣を簡単に</span>身につける</h3>
+                                    <p class="txt-st">組み込みのリマインダーがあるので、フラッシュカードの復習を忘れる心配はありません。また、自分に最適な時間帯に勉強するようにカスタムリマインダーを設定することもできます。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cntnr__3md sticky-img__ctn">
+                        <div class="sticky-img ml-5">
+                            <p></p>
+                            <h2 class="text-vertical ttl-lg str ml-auto mr-0">
+                                毎日少しずつ<br>
+                                英単語の<span class="txt-brand-drk">知識</span>を<br>
+                                解放できます
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- アプリの機能 -->
+        <!-- <section id="functionAnchor" class="sect sect-fh bg-gray expanding-circle__next-ctn js-intersect">
+            <div class="bx bx-6">
+                <div class="cntnr">
+                    <div class="cntnr__itm cntnr__6md">
+                        <h2 class="ttl-lg"></h2>
+                    </div>
+                    <div class="cntnr__itm cntnr__6md">
+                        
+                    </div>
+                </div>
+
+                <div class="cntnr">
+                    <div class="cntnr__8">
+
+                    </div>
+                    <div class="cntnr__4">
+                        <div class="slider-fade js-slider-fade">
+                            <div><img class="img-fluid" src="/shared/img/kateinoigaku/slide-1.png" alt=""></div>
+                            <div><img class="img-fluid" src="/shared/img/kateinoigaku/slide-2.png" alt=""></div>
+                            <div><img class="img-fluid" src="/shared/img/kateinoigaku/slide-3.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section> -->
+        <!-- FAQ -->
+        <section id="faqAnchor" class="sect sect-expnd sect-fh bg-white  expanding-circle__next-ctn js-intersect">
+            <div class="bx bx-6">
+                <div class="pb-5">
+                    <h2 class="ttl-lg text-popup str">よくある<span class="txt-brand">ご質問</span></h2>
+                </div>
+            </div>
+            <div class="kateinoigaku__faq--sect">
+                <div class="kateinoigaku__faq js-faq">
+                    <dl class="kateinoigaku__faq-ctn bx bx-3">
+                        <dt class="kateinoigaku__faq--q txt-st">
+                            <div class="cntnr cntnr-nm kateinoigaku__faq--q-ctn">
+                                <div class="cntnr__flx">
+                                    <span>Q.このアプリはどのように英単語を学ぶのですか？</span>
+                                </div>
+                                <div class="kateinoigaku__faq--icon-ctn">
+                                    <i class="kateinoigaku__faq--icon"></i>
+                                </div>
+                            </div>
+                        </dt>
+                        <dd class="kateinoigaku__faq--a txt-st">
+                            <span class="kateinoigaku__faq--a-text">このアプリでは、フラッシュカード、クイズ、音声練習などを通じて、単語の意味や発音を学ぶことができます。また、進捗を追跡できる機能もあります。</span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="kateinoigaku__faq js-faq">
+                    <dl class="kateinoigaku__faq-ctn bx bx-3">
+                        <dt class="kateinoigaku__faq--q txt-st">
+                            <div class="cntnr cntnr-nm kateinoigaku__faq--q-ctn">
+                                <div class="cntnr__flx">
+                                    <span>Q.アプリは無料ですか？</span>
+                                </div>
+                                <div class="kateinoigaku__faq--icon-ctn">
+                                    <i class="kateinoigaku__faq--icon"></i>
+                                </div>
+                            </div>
+                        </dt>
+                        <dd class="kateinoigaku__faq--a txt-st">
+                            <span class="kateinoigaku__faq--a-text">基本的な機能は無料で利用できますが、プレミアム機能や追加コンテンツは有料です。無料プランでも十分な学習が可能です。</span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="kateinoigaku__faq js-faq">
+                    <dl class="kateinoigaku__faq-ctn bx bx-3">
+                        <dt class="kateinoigaku__faq--q txt-st">
+                            <div class="cntnr cntnr-nm kateinoigaku__faq--q-ctn">
+                                <div class="cntnr__flx">
+                                    <span>Q.どのレベルの英語学習者に適していますか？</span>
+                                </div>
+                                <div class="kateinoigaku__faq--icon-ctn">
+                                    <i class="kateinoigaku__faq--icon"></i>
+                                </div>
+                            </div>
+                        </dt>
+                        <dd class="kateinoigaku__faq--a txt-st">
+                            <span class="kateinoigaku__faq--a-text">初心者から上級者まで、幅広いレベルに対応しています。自分のレベルに合った単語リストを選ぶことができます。</span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="kateinoigaku__faq js-faq">
+                    <dl class="kateinoigaku__faq-ctn bx bx-3">
+                        <dt class="kateinoigaku__faq--q txt-st">
+                            <div class="cntnr cntnr-nm kateinoigaku__faq--q-ctn">
+                                <div class="cntnr__flx">
+                                    <span>Q.オフラインで使用できますか？</span>
+                                </div>
+                                <div class="kateinoigaku__faq--icon-ctn">
+                                    <i class="kateinoigaku__faq--icon"></i>
+                                </div>
+                            </div>
+                        </dt>
+                        <dd class="kateinoigaku__faq--a txt-st">
+                            <span class="kateinoigaku__faq--a-text">はい、オフラインでも使用可能です。事前に必要なデータをダウンロードしておけば、インターネット接続がなくても学習できます。</span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="kateinoigaku__faq js-faq">
+                    <dl class="kateinoigaku__faq-ctn bx bx-3">
+                        <dt class="kateinoigaku__faq--q txt-st">
+                            <div class="cntnr cntnr-nm kateinoigaku__faq--q-ctn">
+                                <div class="cntnr__flx">
+                                    <span>Q.進捗をどのように管理できますか？</span>
+                                </div>
+                                <div class="kateinoigaku__faq--icon-ctn">
+                                    <i class="kateinoigaku__faq--icon"></i>
+                                </div>
+                            </div>
+                        </dt>
+                        <dd class="kateinoigaku__faq--a txt-st">
+                            <span class="kateinoigaku__faq--a-text">アプリ内に進捗トラッキング機能があり、学習した単語数や理解度を可視化できます。また、復習が必要な単語を表示する機能もあります。</span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="kateinoigaku__faq js-faq">
+                    <dl class="kateinoigaku__faq-ctn bx bx-3">
+                        <dt class="kateinoigaku__faq--q txt-st">
+                            <div class="cntnr cntnr-nm kateinoigaku__faq--q-ctn">
+                                <div class="cntnr__flx">
+                                    <span>Q.学習した単語を復習する機能はありますか？</span>
+                                </div>
+                                <div class="kateinoigaku__faq--icon-ctn">
+                                    <i class="kateinoigaku__faq--icon"></i>
+                                </div>
+                            </div>
+                        </dt>
+                        <dd class="kateinoigaku__faq--a txt-st">
+                            <span class="kateinoigaku__faq--a-text">はい、復習機能があります。学習した単語を定期的に復習できるように、スペースドリピティション（間隔を空けた復習）を用いたシステムが導入されています。これにより、記憶を定着させやすくなります。</span>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+        <!-- アプリダウンロードリンク: パララックス -->
+        <section class="sect sect-fh sect-reset kateinoigaku__download parallax loop_slider__wrap ">
+            <div class="">
+                <div class="bx bx-9">
+                    <div class="kateinoigaku__download--ctn-wrap py-0">
+                        <div class="kateinoigaku__download--ctn opague text-center">
+                            <div class="kateinoigaku__download--brdr-ctn opague mb-5 pb-5">
+                                <a class="kateinoigaku__download--logo-lnk" href="">
+                                    <img class="kateinoigaku__download--logo" width="110" height="auto" src="/shared/img/kateinoigaku/icon_app_logo.svg" alt="" width="100%">
+                                </a>
+                                <p class="txt-st">
+                                    iOSアプリ「Lexi」は<br>
+                                    App Storeから無料でダウンロードできます。
+                                </p>
+                            </div>
+                            <div class="mb-4 pb-2">
+                                <a href="#" target="_blank">
+                                    <img width="181" height="auto" src="/shared/img/kateinoigaku/app_store_btn.png" alt="">
+                                </a>
+                            </div>
+                            <div class="mb">
+                                <a href="#" target="_blank">
+                                    <img width="78" height="auto" src="/shared/img/kateinoigaku/app_store_QR.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="kateinoigaku__download--img-lft"><img class="img-fluid" src="/shared/img/kateinoigaku/slide-fade-1.png" alt=""></div>
+                        <div class="kateinoigaku__download--img-rght"><img class="img-fluid" src="/shared/img/kateinoigaku/slide-fade-2.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="kateinoigaku__footer">
+            <div class="kateinoigaku__footer--ctn">
+                <div class="text-center">
+                    <div class="mb-5">
+                        <a href="#js-kateinoigaku"  class="kateinoigaku__download--logo-ctn">
+                            <img class="kateinoigaku__download--logo" width="110" height="auto" src="/shared/img/kateinoigaku/icon_app_logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="position-relative">
+                        <ul class="lst kateinoigaku__nav--lst">
+                            <li class="kateinoigaku__nav--itm"><a class="kateinoigaku__nav--lnk kateinoigaku__nav--lnk-white" href="#introAnchor"><span class="lnk-line-slide">Lexiについて</span></a></li>
+                            <li class="kateinoigaku__nav--itm"><a class="kateinoigaku__nav--lnk kateinoigaku__nav--lnk-white" href="#downloadAnchor"><span class="lnk-line-slide">ダウンロード</span></a></li>
+                            <li class="kateinoigaku__nav--itm"><a class="kateinoigaku__nav--lnk kateinoigaku__nav--lnk-white" href="#meritAnchor"><span class="lnk-line-slide">メリットについて</span></a></li>
+                            <!-- <li class="kateinoigaku__nav--itm"><a class="kateinoigaku__nav--lnk kateinoigaku__nav--lnk-white" href="#functionAnchor"><span class="lnk-line-slide">機能について</span></a></li> -->
+                            <li class="kateinoigaku__nav--itm"><a class="kateinoigaku__nav--lnk kateinoigaku__nav--lnk-white" href="#faqAnchor"><span class="lnk-line-slide">よくある質問</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a target="_blank" class="kateinoigaku__footer--lnk" href="https://service.kateinoigaku.jp/index.html">参考のサイト</a>
+            </div>
+        </footer>
+
+        <div class="kateinoigaku__cover js-kateinoigaku-cover">
+            <div class="kateinoigaku__cover--wrap js-kateinoigaku-wrap">
+                <img class="kateinoigaku__cover--image" src="/shared/img/kateinoigaku/icon_logo.svg" alt="" width="100%">
+            </div>
+        </div>
+
+        <script src="/shared/js/helper.min.js"></script>
+        <script src="/shared/js/web.animations.js"></script>
+        <div id="jsHelper"></div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) {
+                helper.loadjsBefore('/shared/js/dependency/jquery.min.js', function() {
+                    helper.loadjsBefore('/shared/js/dependency/slick.min.js', function() {
+                        $('.js-slider').slick({
+                            infinite: true,
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            arrows: false,
+                            dots: false,
+                            autoplay: true,
+                            autoplaySpeed: 2000,
+                            draggable: true
+                        });
+                        $('.js-slider-fade').slick({
+                            infinite: true,
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            arrows: false,
+                            dots: false,
+                            autoplay: true,
+                            autoplaySpeed: 4000,
+                            fade: true
+                        });
+                    }) 
+                });
+            });
+        </script>
+        <script>
+            let nIntervId;
+            let textColors = {
+                "js-main" : "initial",
+                "js-expandingCircle" : "#fff",
+                "introAnchor" : "#fff",
+                "downloadAnchor" : "#fff",
+                "meritAnchor" : "initial",
+                "functionAnchor" : "initial",
+                "faqAnchor" : "initial"
+            }
+
+            document.addEventListener("DOMContentLoaded", function(event) {
+
+                var showContent = function() {
+                    setTimeout(() => {
+                        document.querySelector('.js-kateinoigaku-wrap').classList.add('hide');
+                    }, "1000");
+                    setTimeout(() => {
+                        document.querySelector('.js-kateinoigaku-cover').classList.add('uncover');
+                    }, "1500");
+                    setTimeout(() => {
+                        document.querySelectorAll('.js-show-txt').forEach( (elem) => {
+                            elem.classList.add('activate');
+                        });
+                    }, "1400");
+                }();
+
+                var handleNavigation = function() {
+
+                    document.addEventListener('scroll', handleNavAppearance);
+
+                    function handleNavAppearance() {
+                        const navElem = document.getElementById('js-nav');
+                        const navPosY = navElem.getBoundingClientRect().y;
+                        const navPosTop = navElem.getBoundingClientRect().top;
+                        const distanceScrolled = window.pageYOffset;
+
+                        if( distanceScrolled < 90 ) {
+                            handleLogoSize("large");
+                            return;
+                        } else {
+                            handleLogoSize("small");
+                        }
+
+                        if( distanceScrolled < 230 ) {
+                            handleNavColor("initial");
+                            return;
+                        }
+
+                        document.querySelectorAll('.js-intersect').forEach(function(elem) {
+                            var posTop = elem.getBoundingClientRect().top;
+                            var posBottom = elem.getBoundingClientRect().bottom;
+
+                            if( posTop < 0 && posBottom > 0 ) {
+                                var id = elem.id
+                                console.log("idElem: ", id)
+                                document.querySelectorAll('.kateinoigaku__nav--lnk').forEach(function(textElem) {
+                                    const direction = textColors[id] == "#fff" ? "on": "off";
+                                    handleNavColor(direction);
+                                    handleNavFontFor(id);
+                                });
+                            } 
+                        })
+                    }
+                }();
+
+                function handleLogoSize(size) {
+                    if( size == "small" ) {
+                        document.querySelector('.js-logo').classList.add('kateinoigaku__top-logo-scroll');
+                    } else {
+                        document.querySelector('.js-logo').classList.remove('kateinoigaku__top-logo-scroll');
+                    }
+                }
+
+                function handleNavColor(direction) {
+                    const linkClassName = 'kateinoigaku__nav--lnk-white';
+                    const underlineClassName = 'lnk-line-slide-white';
+
+                    document.querySelectorAll('.kateinoigaku__nav--lnk').forEach(function(textElem) {
+                        if( direction == "on" ) {
+                            textElem.classList.add(linkClassName);
+                        } else {
+                            textElem.classList.remove(linkClassName);
+                        }
+                    });
+                    document.querySelectorAll('.lnk-line-slide').forEach(function(textElem) {
+                        if( direction == "on" ) {
+                            textElem.classList.add(underlineClassName);
+                        } else {
+                            textElem.classList.remove(underlineClassName);
+                        }
+                    });
+                }
+
+                function handleNavFontFor(anchorId) {
+                    console.log("anchorId: " + anchorId)
+                    document.querySelectorAll('.js-nav-link').forEach(function(elem) {
+                        let href = elem.getAttribute("href");
+                        elem.classList.remove('active');
+                        elem.querySelector('.lnk-line-slide').classList.remove('active');
+                        if( href == "#" + anchorId ) {
+                            elem.classList.add('active');
+                            elem.querySelector('.lnk-line-slide').classList.add('active');
+                        }
+                    })
+                }
+            })
+        </script>
+    </body>
+</html>
